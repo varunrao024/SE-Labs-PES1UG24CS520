@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="650" viewBox="0 0 960 650" font-family="Helvetica, Arial, sans-serif">
+  <rect width="960" height="650" fill="white"/>
+
+  <!-- System boundary -->
+  <rect x="180" y="30" width="560" height="560" fill="none" stroke="#333333" stroke-width="1.5" rx="4"/>
+  <text x="460" y="55" text-anchor="middle" font-size="14" font-weight="bold" fill="#222222">Airport Lost Luggage Claim &amp; Tracking Portal</text>
+
+  <!-- Actor: Passenger (left) -->
+  <g stroke="#222222" stroke-width="1.6" fill="none">
+    <circle cx="60" cy="270" r="14" fill="white"/>
+    <line x1="60" y1="284" x2="60" y2="330"/>
+    <line x1="30" y1="305" x2="90" y2="305"/>
+    <line x1="60" y1="330" x2="35" y2="365"/>
+    <line x1="60" y1="330" x2="85" y2="365"/>
+  </g>
+  <text x="60" y="385" text-anchor="middle" font-size="13" fill="#222222">Passenger</text>
+
+  <!-- Actor: Baggage Service Agent (right) -->
+  <g stroke="#222222" stroke-width="1.6" fill="none">
+    <circle cx="840" cy="230" r="14" fill="white"/>
+    <line x1="840" y1="244" x2="840" y2="290"/>
+    <line x1="810" y1="265" x2="870" y2="265"/>
+    <line x1="840" y1="290" x2="815" y2="325"/>
+    <line x1="840" y1="290" x2="865" y2="325"/>
+  </g>
+  <text x="840" y="345" text-anchor="middle" font-size="13" fill="#222222">Baggage Service Agent</text>
+
+  <!-- Use cases (ellipses) -->
+  <!-- File Lost Baggage Claim -->
+  <ellipse cx="330" cy="90" rx="110" ry="32" fill="#eef3fb" stroke="#33507a" stroke-width="1.3"/>
+  <text x="330" y="94" text-anchor="middle" font-size="12.5" fill="#1f2d40">File Lost Baggage Claim</text>
+
+  <!-- Verify Passenger Identity -->
+  <ellipse cx="330" cy="185" rx="110" ry="32" fill="#eef3fb" stroke="#33507a" stroke-width="1.3"/>
+  <text x="330" y="189" text-anchor="middle" font-size="12.5" fill="#1f2d40">Verify Passenger Identity</text>
+
+  <!-- Track Baggage Status -->
+  <ellipse cx="330" cy="280" rx="110" ry="32" fill="#eef3fb" stroke="#33507a" stroke-width="1.3"/>
+  <text x="330" y="284" text-anchor="middle" font-size="12.5" fill="#1f2d40">Track Baggage Status</text>
+
+  <!-- Send Delay Notification -->
+  <ellipse cx="590" cy="280" rx="110" ry="32" fill="#eef3fb" stroke="#33507a" stroke-width="1.3"/>
+  <text x="590" y="284" text-anchor="middle" font-size="12.5" fill="#1f2d40">Send Delay Notification</text>
+
+  <!-- View Compensation Status -->
+  <ellipse cx="330" cy="375" rx="110" ry="32" fill="#eef3fb" stroke="#33507a" stroke-width="1.3"/>
+  <text x="330" y="379" text-anchor="middle" font-size="12.5" fill="#1f2d40">View Compensation Status</text>
+
+  <!-- Match Baggage to Scan Logs -->
+  <ellipse cx="590" cy="470" rx="120" ry="32" fill="#eef3fb" stroke="#33507a" stroke-width="1.3"/>
+  <text x="590" y="474" text-anchor="middle" font-size="12.5" fill="#1f2d40">Match Baggage to Scan Logs</text>
+
+  <!-- Update Claim &amp; Compensation -->
+  <ellipse cx="590" cy="555" rx="120" ry="32" fill="#eef3fb" stroke="#33507a" stroke-width="1.3"/>
+  <text x="590" y="551" text-anchor="middle" font-size="12" fill="#1f2d40">Update Claim &amp;</text>
+  <text x="590" y="566" text-anchor="middle" font-size="12" fill="#1f2d40">Initiate Compensation</text>
+
+  <!-- Actor associations -->
+  <line x1="90" y1="290" x2="222" y2="105" stroke="#555555" stroke-width="1.1"/>
+  <line x1="90" y1="300" x2="222" y2="280" stroke="#555555" stroke-width="1.1"/>
+  <line x1="90" y1="310" x2="222" y2="370" stroke="#555555" stroke-width="1.1"/>
+
+  <line x1="810" y1="250" x2="700" y2="470" stroke="#555555" stroke-width="1.1"/>
+  <line x1="810" y1="260" x2="700" y2="555" stroke="#555555" stroke-width="1.1"/>
+  <line x1="810" y1="240" x2="435" y2="265" stroke="#555555" stroke-width="1.1"/>
+
+  <!-- include relationship: File Lost Baggage Claim -> Verify Passenger Identity -->
+  <line x1="330" y1="122" x2="330" y2="153" stroke="#8a4b00" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="345" y="140" font-size="11" fill="#8a4b00" font-style="italic">&#171;include&#187;</text>
+
+  <!-- extend relationship: Send Delay Notification -> Track Baggage Status -->
+  <line x1="480" y1="280" x2="440" y2="280" stroke="#8a4b00" stroke-width="1.3" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="440" y="265" font-size="11" fill="#8a4b00" font-style="italic">&#171;extend&#187;</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8a4b00"/>
+    </marker>
+  </defs>
+  <text x="480" y="638" text-anchor="middle" font-size="12" fill="#444444">Varun Rao  &#183;  PES1UG24CS520  &#183;  Section 5-I</text>
+</svg>
